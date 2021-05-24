@@ -1,1 +1,19 @@
+.nav {
+  @apply flex flex-row;
+}
+.card {
+  @apply md:w-auto max-w-lg mx-auto mb-10 bg-primary rounded-xl shadow overflow-hidden border;
+}
 
+.title {
+  @apply lg:text-8xl md:text-7xl sm:text-7xl text-6xl text-center  text-brand;
+}
+
+.textShadow {
+  text-shadow: 1px 1px 1px #3f36367a, 1px 2px 1px #3f36367a,
+    1px 3px 1px #3f36367a, 1px 4px 1px #3f36367a, 1px 5px 1px #3f36367a,
+    1px 6px 1px #3f36367a, 1px 7px 1px #3f36367a, 1px 8px 1px #3f36367a,
+    1px 9px 1px #3f36367a, 1px 10px 1px #3f36367a,
+    1px 18px 6px rgba(16, 16, 16, 1), 1px 22px 10px rgba(16, 16, 16, 1),
+    1px 25px 35px rgba(16, 16, 16, 1), 1px 30px 60px rgba(16, 16, 16, 1);
+}
