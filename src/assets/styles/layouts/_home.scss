@@ -1,8 +1,51 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  line-height: 1.6;
+}
+
+.nav__header {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -1rem;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.nav__header:before {
+  content: "";
+  background-image: url("../images/photo-band4.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
 .nav {
-  @apply flex flex-row;
+  @apply grid grid-cols-3 mx-20 my-auto;
 }
 .card {
-  @apply md:w-auto max-w-lg mx-auto mb-10 bg-primary rounded-xl shadow overflow-hidden border;
+  @apply w-full md:w-2/5 mx-5  mb-10 bg-primary rounded-xl shadow overflow-hidden border;
 }
 
 .title {
