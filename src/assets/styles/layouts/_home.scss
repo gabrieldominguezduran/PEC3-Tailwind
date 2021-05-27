@@ -41,8 +41,20 @@ body {
   opacity: 0.75;
 }
 
+.nav__links {
+  opacity: 0.5;
+}
+
+.nav__links:hover {
+  opacity: 1;
+}
+
+.active {
+  border-bottom: 5px solid #fdf910;
+}
+
 .nav {
-  @apply grid grid-cols-3 mx-20 my-auto;
+  @apply grid grid-cols-3 mx-10 sm:mx-20 my-auto;
 }
 .card {
   @apply w-full md:w-2/5 mx-5  mb-10 bg-primary rounded-xl shadow overflow-hidden border;
